@@ -157,7 +157,7 @@ margin-bottom:25px;
 
 
 
-/* SERVICES */
+/* SERVICES STRIP (HOME PAGE) */
 
 .services{
 display:flex;
@@ -329,107 +329,235 @@ margin-top:20px;
 /* ABOUT PAGE */
 
 .about-section{
-
 background:#3f5674;
 padding:80px 0 40px 0;
-
 }
 
 .about-container{
-
 width:1100px;
 margin:auto;
 color:white;
-
 }
 
 .about-row{
-
 display:flex;
 align-items:center;
 justify-content:space-between;
 margin-bottom:120px;
 gap:80px;
-
 }
 
 .about-img{
-
 width:360px;
 height:460px;
 object-fit:cover;
 border-radius:4px;
-
 }
 
 .about-text{
-
 width:600px;
 text-align:center;
-
 }
 
 .script-title{
-
 font-family:'Great Vibes';
 font-size:90px;
 margin-bottom:10px;
-
 }
 
 .lens-title{
-
 font-family:'Playfair Display';
 font-size:32px;
 letter-spacing:2px;
 margin-bottom:20px;
-
 }
 
 .about-text p{
-
 font-size:15px;
 line-height:1.8;
-
 }
+
+
+
+/* BOOK PAGE */
+
+body{
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+.book-box{
+width:520px;
+margin:160px auto;
+background:#3a2f2b;
+padding:60px;
+border-radius:35px;
+color:white;
+}
+
+.book-title{
+text-align:center;
+font-family:'Great Vibes';
+font-size:60px;
+margin-bottom:40px;
+}
+
+.book-box input,
+.book-box textarea,
+.book-box select{
+width:100%;
+background:transparent;
+border:none;
+border-bottom:1px solid white;
+margin-bottom:28px;
+padding:10px 0;
+color:white;
+font-size:14px;
+}
+
+.book-box select option{
+color:black;
+}
+
+.book-button{
+display:block;
+margin:auto;
+background:#9c7759;
+border:none;
+color:white;
+padding:14px 40px;
+margin-top:20px;
+cursor:pointer;
+}
+
+
+
+/* SERVICES PAGE */
+
+.services-hero{
+position:relative;
+height:450px;
+overflow:hidden;
+}
+
+.services-hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.service-script{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-family:'Great Vibes',cursive;
+font-size:90px;
+color:#f4ede4;
+z-index:3;
+}
+
+.services-hero .nav a,
+.services-hero .logo{
+color:#f4ede4;
+}
+
+.services-page{
+background:#3a2f2b;
+padding:80px 0;
+color:white;
+}
+
+.table-title{
+text-align:center;
+letter-spacing:3px;
+font-size:22px;
+margin-bottom:30px;
+}
+
+.price-table{
+width:900px;
+margin:auto;
+border-collapse:collapse;
+margin-bottom:80px;
+}
+
+.price-table th{
+font-weight:400;
+letter-spacing:2px;
+padding:18px;
+border-bottom:1px solid white;
+}
+
+.price-table td{
+padding:16px;
+text-align:center;
+border-bottom:1px solid #777;
+}
+
+.price-table tr:hover{
+background:#4a3c36;
+}
+
+.polaroid-area{
+width:1200px;
+margin:auto;
+height:700px;
+position:relative;
+}
+
+.polaroid{
+position:absolute;
+background:white;
+padding:15px 15px 55px 15px;
+width:260px;
+box-shadow:0 12px 25px rgba(0,0,0,.4);
+}
+
+.polaroid img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.p1{top:0;left:80px;transform:rotate(-8deg);}
+.p2{top:60px;left:300px;transform:rotate(6deg);}
+.p3{top:0;left:580px;transform:rotate(-5deg);}
+.p4{top:60px;left:860px;transform:rotate(7deg);}
+.p5{top:350px;left:150px;transform:rotate(5deg);}
+.p6{top:400px;left:500px;transform:rotate(-6deg);}
+.p7{top:350px;left:850px;transform:rotate(4deg);}
 
 
 
 /* FOOTER */
 
 footer{
-
 background:#e8d9c5;
 display:flex;
 justify-content:space-between;
 padding:50px 10%;
 font-size:14px;
-
 }
 
 .footer-logo-top{
-
 font-family:'Playfair Display';
 letter-spacing:3px;
 font-size:28px;
-
 }
 
 .footer-logo-bottom{
-
 font-family:'Great Vibes';
 font-size:32px;
 margin-top:-6px;
-
 }
 
 footer a{
-
 display:block;
 color:black;
 text-decoration:none;
 margin-top:8px;
-
 }
 
 
@@ -438,52 +566,85 @@ margin-top:8px;
 
 @media(max-width:1000px){
 
-.nav{
-flex-direction:column;
-gap:15px;
+.nav{flex-direction:column;gap:15px;}
+.nav-solid{flex-direction:column;gap:15px;}
+
+.slide-track img{height:180px;}
+
+.services{flex-direction:column;}
+.service{width:100%;}
+
+footer{flex-direction:column;gap:25px;}
+
+.contact-box{width:90%;}
+.name-row{flex-direction:column;}
+
+.about-container{width:90%;}
+.about-row{flex-direction:column;text-align:center;}
+.about-text{width:100%;}
+
+
+/* BOOK PAGE MOBILE */
+
+.book-box{
+width:90%;
+margin:120px auto;
+padding:40px;
 }
 
-.nav-solid{
-flex-direction:column;
-gap:15px;
+.book-title{
+font-size:42px;
 }
 
-.slide-track img{
-height:180px;
-}
-
-.services{
-flex-direction:column;
-}
-
-.service{
+.book-button{
 width:100%;
 }
 
-footer{
-flex-direction:column;
-gap:25px;
+
+
+/* SERVICES HERO MOBILE */
+
+.services-hero{
+height:300px;
 }
 
-.contact-box{
-width:90%;
+.service-script{
+font-size:55px;
 }
 
-.name-row{
-flex-direction:column;
+
+
+/* SERVICES TABLE MOBILE */
+
+.price-table{
+width:95%;
+font-size:12px;
 }
 
-.about-container{
-width:90%;
+.price-table th,
+.price-table td{
+padding:10px;
 }
 
-.about-row{
-flex-direction:column;
-text-align:center;
-}
 
-.about-text{
-width:100%;
+
+/* POLAROIDS MOBILE — CENTERED SHRUNK COLLAGE */
+
+.polaroid-area{
+
+width:1200px;
+height:700px;
+
+position:relative;
+
+left:50%;
+transform:translateX(-50%) scale(.35);
+
+transform-origin:top center;
+
+margin-top:20px;
+margin-bottom:-300px;
+
 }
 
 }
