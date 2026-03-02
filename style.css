@@ -553,11 +553,574 @@ font-size:32px;
 margin-top:-6px;
 }
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+}
+
+
+
+/* NAVIGATION HERO (HOME PAGE) */
+
+.nav{
+position:absolute;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 60px;
+color:#2a1b12;
+z-index:10;
+}
+
+.nav a{
+color:#2a1b12;
+text-decoration:none;
+margin:0 15px;
+font-size:13px;
+letter-spacing:2px;
+font-weight:400;
+}
+
+.nav-left,
+.nav-right{
+display:flex;
+}
+
+.logo{
+text-align:center;
+color:#2a1b12;
+}
+
+.logo-top{
+font-family:'Playfair Display',serif;
+font-size:26px;
+letter-spacing:4px;
+}
+
+.logo-bottom{
+font-family:'Great Vibes',cursive;
+font-size:30px;
+margin-top:-10px;
+}
+
+
+
+/* SOLID NAV (OTHER PAGES) */
+
+.nav-solid{
+background:#c9b59e;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+position:sticky;
+top:0;
+z-index:20;
+}
+
+.nav-solid a{
+color:#2a1b12;
+text-decoration:none;
+margin:0 15px;
+font-size:13px;
+letter-spacing:2px;
+font-weight:400;
+}
+
+
+
+/* HERO HOME */
+
+.hero{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.hero-video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+
+/* HOME ABOUT SECTION */
+
+.about{
+background:#8a6a4f;
+color:#f4ede4;
+padding:90px 0;
+overflow:hidden;
+}
+
+.about-title{
+text-align:center;
+font-family:'Playfair Display';
+font-size:38px;
+margin-bottom:50px;
+}
+
+.about-title span{
+font-family:'Great Vibes';
+font-size:44px;
+}
+
+.slider{
+width:100vw;
+overflow:hidden;
+margin-bottom:50px;
+}
+
+.slide-track{
+display:flex;
+width:max-content;
+animation:scroll 90s linear infinite;
+}
+
+.slide-track img{
+height:260px;
+width:auto;
+object-fit:contain;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+.about-text{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:13px;
+line-height:1.8;
+padding:0 10%;
+}
+
+.about-text p{
+margin-bottom:25px;
+}
+
+
+
+/* SERVICES STRIP (HOME PAGE) */
+
+.services{
+display:flex;
+}
+
+.service{
+position:relative;
+width:33.33%;
+}
+
+.service img{
+width:100%;
+height:380px;
+object-fit:cover;
+}
+
+.service-overlay{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:22px;
+letter-spacing:4px;
+}
+
+
+
+/* PORTFOLIO PAGE */
+
+.portfolio-hero{
+position:relative;
+height:520px;
+overflow:hidden;
+}
+
+.portfolio-hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.portfolio-title{
+position:absolute;
+bottom:-20px;
+left:50%;
+transform:translateX(-50%);
+font-family:'Great Vibes';
+font-size:90px;
+color:white;
+}
+
+.portfolio-section{
+background:#3a2f2b;
+color:white;
+padding:70px 10%;
+}
+
+.portfolio-section h2{
+margin:40px 0 20px 0;
+letter-spacing:2px;
+font-weight:400;
+}
+
+.portrait-grid,
+.wedding-grid,
+.commercial-grid{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.portrait-grid img,
+.wedding-grid img,
+.commercial-grid img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+}
+
+
+
+/* CONTACT PAGE */
+
+.contact-page{
+
+background-image:url("ride2.jpg");
+background-size:cover;
+background-position:center;
+
+padding-top:160px;
+padding-bottom:120px;
+min-height:100vh;
+
+}
+
+.contact-box{
+
+width:480px;
+margin:auto;
+
+background:#4f739b;
+
+padding:50px;
+
+border-radius:30px;
+
+color:white;
+
+}
+
+.contact-title{
+text-align:center;
+font-family:'Great Vibes';
+font-size:56px;
+margin-bottom:30px;
+}
+
+form input,
+form textarea{
+
+width:100%;
+
+background:transparent;
+
+border:none;
+
+border-bottom:1px solid white;
+
+margin-bottom:25px;
+
+padding:10px 0;
+
+color:white;
+
+}
+
+.name-row{
+display:flex;
+gap:20px;
+}
+
+textarea{
+height:140px;
+resize:none;
+}
+
+button{
+
+display:block;
+
+margin:auto;
+
+background:#9c7759;
+
+border:none;
+
+color:white;
+
+padding:12px 35px;
+
+margin-top:20px;
+
+}
+
+
+
+/* ABOUT PAGE */
+
+.about-section{
+background:#3f5674;
+padding:80px 0 40px 0;
+}
+
+.about-container{
+width:1100px;
+margin:auto;
+color:white;
+}
+
+.about-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin-bottom:120px;
+gap:80px;
+}
+
+.about-img{
+width:360px;
+height:460px;
+object-fit:cover;
+border-radius:4px;
+}
+
+.about-text{
+width:600px;
+text-align:center;
+}
+
+.script-title{
+font-family:'Great Vibes';
+font-size:90px;
+margin-bottom:10px;
+}
+
+.lens-title{
+font-family:'Playfair Display';
+font-size:32px;
+letter-spacing:2px;
+margin-bottom:20px;
+}
+
+.about-text p{
+font-size:15px;
+line-height:1.8;
+}
+
+
+
+/* BOOK PAGE */
+
+body{
+background-size:cover;
+background-position:center;
+min-height:100vh;
+}
+
+.book-box{
+width:520px;
+margin:160px auto;
+background:#3a2f2b;
+padding:60px;
+border-radius:35px;
+color:white;
+}
+
+.book-title{
+text-align:center;
+font-family:'Great Vibes';
+font-size:60px;
+margin-bottom:40px;
+}
+
+.book-box input,
+.book-box textarea,
+.book-box select{
+width:100%;
+background:transparent;
+border:none;
+border-bottom:1px solid white;
+margin-bottom:28px;
+padding:10px 0;
+color:white;
+font-size:14px;
+}
+
+.book-box select option{
+color:black;
+}
+
+.book-button{
+display:block;
+margin:auto;
+background:#9c7759;
+border:none;
+color:white;
+padding:14px 40px;
+margin-top:20px;
+cursor:pointer;
+}
+
+
+
+/* SERVICES PAGE */
+
+.services-hero{
+position:relative;
+height:450px;
+overflow:hidden;
+}
+
+.services-hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.service-script{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-family:'Great Vibes',cursive;
+font-size:90px;
+color:#f4ede4;
+z-index:3;
+}
+
+.services-hero .nav a,
+.services-hero .logo{
+color:#f4ede4;
+}
+
+.services-page{
+background:#3a2f2b;
+padding:80px 0;
+color:white;
+}
+
+.table-title{
+text-align:center;
+letter-spacing:3px;
+font-size:22px;
+margin-bottom:30px;
+}
+
+.price-table{
+width:900px;
+margin:auto;
+border-collapse:collapse;
+margin-bottom:80px;
+}
+
+.price-table th{
+font-weight:400;
+letter-spacing:2px;
+padding:18px;
+border-bottom:1px solid white;
+}
+
+.price-table td{
+padding:16px;
+text-align:center;
+border-bottom:1px solid #777;
+}
+
+.price-table tr:hover{
+background:#4a3c36;
+}
+
+.polaroid-area{
+width:1200px;
+margin:auto;
+height:700px;
+position:relative;
+}
+
+.polaroid{
+position:absolute;
+background:white;
+padding:15px 15px 55px 15px;
+width:260px;
+box-shadow:0 12px 25px rgba(0,0,0,.4);
+}
+
+.polaroid img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.p1{top:0;left:80px;transform:rotate(-8deg);}
+.p2{top:60px;left:300px;transform:rotate(6deg);}
+.p3{top:0;left:580px;transform:rotate(-5deg);}
+.p4{top:60px;left:860px;transform:rotate(7deg);}
+.p5{top:350px;left:150px;transform:rotate(5deg);}
+.p6{top:400px;left:500px;transform:rotate(-6deg);}
+.p7{top:350px;left:850px;transform:rotate(4deg);}
+
+
+
+/* FOOTER */
+
+footer{
+background:#e8d9c5;
+display:flex;
+justify-content:space-between;
+padding:50px 10%;
+font-size:14px;
+}
+
+.footer-logo-top{
+font-family:'Playfair Display';
+letter-spacing:3px;
+font-size:28px;
+}
+
+.footer-logo-bottom{
+font-family:'Great Vibes';
+font-size:32px;
+margin-top:-6px;
+}
+
 footer a{
 display:block;
+color:#0066cc;
+text-decoration:underline;
+margin-top:8px;
+font-weight:500;
+}
+
+.footer-title{
 color:black;
 text-decoration:none;
-margin-top:8px;
+font-weight:bold;
+margin-bottom:10px;
 }
 
 
@@ -646,5 +1209,96 @@ margin-top:20px;
 margin-bottom:-300px;
 
 }
+
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+.nav{flex-direction:column;gap:15px;}
+.nav-solid{flex-direction:column;gap:15px;}
+
+.slide-track img{height:180px;}
+
+.services{flex-direction:column;}
+.service{width:100%;}
+
+footer{flex-direction:column;gap:25px;}
+
+.contact-box{width:90%;}
+.name-row{flex-direction:column;}
+
+.about-container{width:90%;}
+.about-row{flex-direction:column;text-align:center;}
+.about-text{width:100%;}
+
+
+/* BOOK PAGE MOBILE */
+
+.book-box{
+width:90%;
+margin:120px auto;
+padding:40px;
+}
+
+.book-title{
+font-size:42px;
+}
+
+.book-button{
+width:100%;
+}
+
+
+
+/* SERVICES HERO MOBILE */
+
+.services-hero{
+height:300px;
+}
+
+.service-script{
+font-size:55px;
+}
+
+
+
+/* SERVICES TABLE MOBILE */
+
+.price-table{
+width:95%;
+font-size:12px;
+}
+
+.price-table th,
+.price-table td{
+padding:10px;
+}
+
+
+
+/* POLAROIDS MOBILE — CENTERED SHRUNK COLLAGE */
+
+.polaroid-area{
+
+width:1200px;
+height:700px;
+
+position:relative;
+
+left:50%;
+transform:translateX(-50%) scale(.35);
+
+transform-origin:top center;
+
+margin-top:20px;
+margin-bottom:-300px;
+
+}
+
 
 }
