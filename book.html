@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book a Session</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* BACKGROUND */
+
+body{
+
+margin:0;
+font-family:'Montserrat',sans-serif;
+
+background-image:url("violinbg.jpg");
+background-size:cover;
+background-position:center;
+
+min-height:100vh;
+
+}
+
+
+/* FORM BOX */
+
+.book-box{
+
+width:520px;
+
+margin:160px auto;
+
+background:#3a2f2b;   /* DARK BROWN */
+
+padding:60px;
+
+border-radius:35px;
+
+color:white;
+
+}
+
+
+/* TITLE */
+
+.book-title{
+
+text-align:center;
+
+font-family:'Great Vibes';
+
+font-size:60px;
+
+margin-bottom:40px;
+
+}
+
+
+/* INPUTS */
+
+.book-box input,
+.book-box textarea,
+.book-box select{
+
+width:100%;
+
+background:transparent;
+
+border:none;
+
+border-bottom:1px solid white;
+
+margin-bottom:28px;
+
+padding:10px 0;
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+/* DROPDOWN FIX */
+
+.book-box select option{
+color:black;
+}
+
+
+/* NAME ROW */
+
+.name-row{
+
+display:flex;
+
+gap:25px;
+
+}
+
+
+/* MESSAGE */
+
+textarea{
+
+height:160px;
+resize:none;
+
+}
+
+
+/* BUTTON */
+
+.book-button{
+
+display:block;
+
+margin:auto;
+
+background:#9c7759;
+
+border:none;
+
+color:white;
+
+padding:14px 40px;
+
+margin-top:20px;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- NAV -->
+
+<div class="nav-solid">
+
+<div class="nav-left">
+
+<a href="index.html">HOME</a>
+<a href="portfolio.html">PORTFOLIO</a>
+<a href="about.html">ABOUT</a>
+
+</div>
+
+
+<div class="logo">
+
+<div class="logo-top">
+JOHN VASQUEZ
+</div>
+
+<div class="logo-bottom">
+Media
+</div>
+
+</div>
+
+
+<div class="nav-right">
+
+<a href="book.html">BOOK A SESSION</a>
+<a href="services.html">SERVICES</a>
+<a href="contact.html">CONTACT</a>
+
+</div>
+
+</div>
+
+
+
+<!-- FORM -->
+
+<div class="book-box">
+
+<div class="book-title">
+Book a Session
+</div>
+
+
+<form>
+
+
+<div class="name-row">
+
+<input type="text" placeholder="First Name*" required>
+
+<input type="text" placeholder="Last Name*" required>
+
+</div>
+
+
+<input type="tel" placeholder="Phone*" required>
+
+
+<input type="email" placeholder="Email*" required>
+
+
+
+<select required>
+
+<option value="">Service Type</option>
+
+<option>Portrait Session</option>
+
+<option>Wedding Coverage</option>
+
+<option>Event Videography</option>
+
+<option>Commercial Package</option>
+
+</select>
+
+
+
+<input type="date" required>
+
+
+
+<input type="text" placeholder="Location*">
+
+
+
+<textarea placeholder="Message"></textarea>
+
+
+
+<button class="book-button">
+SUBMIT
+</button>
+
+
+</form>
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div>
+
+<div class="footer-logo-top">
+JOHN VASQUEZ
+</div>
+
+<div class="footer-logo-bottom">
+Media
+</div>
+
+</div>
+
+
+<div>
+
+<div>CONTACT</div>
+
+<div>John Vasquez</div>
+
+<div>480-745-6983</div>
+
+<div>johnvasquez01@gmail.com</div>
+
+</div>
+
+
+<div>
+
+<div>SOCIALS</div>
+
+<a href="https://instagram.com/johnvasquezmedia" target="_blank">
+Instagram
+</a>
+
+<a href="https://linkedin.com/in/johnbenjaminvasquez" target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</footer>
+
+
+
+</body>
+</html>
